@@ -184,3 +184,32 @@ if($map $= "campdespair")
 	$roomNum[11] = "Janitor";
 	$roomNum[12] = "House";
 }
+//PRL RESORT MAP PREFS:
+if($map $= "resort")
+{
+	//Allow sandstorms
+	$Despair::Sandstorm = false;
+
+	$Despair::RoomCount = 17;
+
+    //Upstairs
+	$roomNum[1] = "19";
+	$roomNum[2] = "17";
+	$roomNum[3] = "15";
+	$roomNum[4] = "13";
+	$roomNum[5] = "11";
+	$roomNum[6] = "10";
+	$roomNum[7] = "12";
+	$roomNum[8] = "14";
+	$roomNum[9] = "16";
+	$roomNum[10] = "18";
+    //Downstairs
+	$roomNum[11] = "B1";
+	$roomNum[12] = "B2";
+	$roomNum[13] = "B3";
+	$roomNum[14] = "B4";
+	$roomNum[15] = "B5";
+	$roomNum[16] = "B6";
+    //Shack
+    $roomNum[17] = "Shack";
+}

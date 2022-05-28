@@ -1,8 +1,8 @@
 $Despair::Traits::Tick = 3000; //miliseconds
 
-$Despair::Traits::Positive = "Investigative	Heavy Sleeper	Gang Member	Extra Tough	Bodybuilder	Athletic	Loudmouth	Optimistic	Medium"; //"Pickpocket"
+$Despair::Traits::Positive = "Investigative	Heavy Sleeper	Gang Member	Extra Tough	Bodybuilder	Athletic	Loudmouth	Optimistic"; //"Pickpocket Medium"
 $Despair::Traits::Neutral = "Snorer	Feel No Pain	Hatter	Chain Smoker	Apathetic";
-$Despair::Traits::Negative = "Clumsy	Paranoid	Nervous	Frail	Cold	Sluggish	Hemophiliac	Squeamish	Softspoken	Social Anxiety	Mood Swings	Melancholic	Schizo	Narcoleptic";
+$Despair::Traits::Negative = "Clumsy	Paranoid	Nervous	Frail	Cold	Sluggish	Hemophiliac	Squeamish	Softspoken	Social Anxiety	Mood Swings	Melancholic	Schizo"; //Narcoleptic
 
 //positive
 $Despair::Traits::Description["Investigative"] = "You will get more information from corpses.";
@@ -12,7 +12,6 @@ $Despair::Traits::Description["Extra Tough"] = "More resistant to weapon damage!
 $Despair::Traits::Description["Bodybuilder"] = "Faster weapon swings!";
 $Despair::Traits::Description["Athletic"] = "Slightly faster run speed!";
 $Despair::Traits::Description["Loudmouth"] = "Always the attention seeker, your voice travels for quite the distance.";
-$Despair::Traits::Description["Pickpocket"] = "Can loot people even if they're conscious! Can't steal weapons and worn items.";
 $Despair::Traits::Description["Optimistic"] = "Nothing will make you feel depressed!";
 $Despair::Traits::Description["Medium"] = "You're able to listen in on what the dead is whispering about beyond the veil. [Beta]";
 
@@ -36,13 +35,17 @@ $Despair::Traits::Description["Cold"] = "Constantly ill...";
 $Despair::Traits::Description["Sluggish"] = "Slightly slower run speed.";
 $Despair::Traits::Description["Hemophiliac"] = "Bleed more.";
 $Despair::Traits::Description["Squeamish"] = "Blood makes you scream! Seeing corpses will make you faint.";
-$Despair::Traits::Description["Softspoken"] = "quieter speech, unable to use caps...";
+$Despair::Traits::Description["Softspoken"] = "Quieter speech, unable to use caps...";
 $Despair::Traits::Description["Social Anxiety"] = "Being near (living) people for too long makes you freak out and faint.";
 $Despair::Traits::Description["Mood Swings"] = "Your mood is swayed a lot easier.";
 $Despair::Traits::Description["Melancholic"] = "You just can't ever feel happy.";
 $Despair::Traits::Description["Narcoleptic"] = "Random bouts of lethargy leaves you unable to complete most tasks. [Beta]";
-$Despair::Traits::Description["Schizo"] = "Your mind frequently wanders, and you'll never sure if you're truly alone.";
+$Despair::Traits::Description["Schizo"] = "Your mind frequently wanders, and you'll never be sure if you're truly alone.";
 
+			function cleanLethargic()
+			{
+				%obj.setStatusEffect($SE_passiveSlot, "lethargic_clearer");
+			}
 function GenerateTraits(%character, %client)
 {
 	%typePositive = $Despair::Traits::Positive;
@@ -156,16 +159,18 @@ function Player::traitSchedule(%obj)
 
 		if(%stress)
 		{
-			if(!%obj.client.killer && !isEventPending(%obj.passOutSchedule) && %obj.anxiety > 6 && $Sim::Time - %obj.lastKO > 60)
+			if(!%obj.client.killer &&  !%obj.unconscious && !isEventPending(%obj.passOutSchedule) && %obj.anxiety > 4 && $Sim::Time - %obj.lastKO > 60)
 			{
 				messageClient(%obj.client, '', "\c5You're about to pass out due to your \c3social anxiety\c5...");
 				%obj.passOutSchedule = %obj.schedule(5000, knockOut, 20);
 				%obj.anxiety = 0;
 			}
-			else if(getRandom() < 0.05 * %stress)
+			else if(getRandom() < 0.1 * %stress)
 			{
 				if($Sim::Time - %obj.client.lastEmoteTime >= 60)
+				{
 					%obj.anxiety = 0;
+				}
 				%obj.anxiety++;
 				if(%obj.anxiety == 1)
 					%level = "\c3a bit ";
@@ -262,7 +267,7 @@ function Player::traitSchedule(%obj)
 		if(getRandom() < 0.01)
 		{
 			%obj.setStatusEffect($SE_passiveSlot, "lethargic");
-			
+			%obj.schedule(50000, "cleanLethargic");
 		}
 	}
 	%obj.traitSchedule = %obj.schedule(getMax(500, $Despair::Traits::Tick), traitSchedule, %obj);
@@ -280,7 +285,7 @@ function checkTraitConflicts(%list, %trait)
 	%conflicts[%c++] = "Optimistic	Mood Swings	Melancholic	Apathetic";
 	%conflicts[%c++] = "Loudmouth	Softspoken";
 	%conflicts[%c++] = "Medium	Schizo";
-	%conflicts[%c++] = "Heavy Sleeper	Paranoid";
+	%conflicts[%c++] = "Heavy Sleeper	Paranoid	Narcoleptic";
 
 	%v = -1;
 	while(%v++ <= %c)

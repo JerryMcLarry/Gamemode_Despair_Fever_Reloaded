@@ -152,14 +152,5 @@ function HandHammerImage::onMeleeHit(%image, %player, %object, %position, %norma
 		if(%obj.unconscious)
 			%damage *= 2;
 		return %object.damage(%player, %position, %damage, %image.type);
-		if(%object.getType() & $TypeMasks::FxBrickObjectType && %object.getDataBlock().isDoor)
-    {
-        %dam = %object.doorDamage(0.1);
-        if(%dam)
-        {
-            ServerPlay3D(WoodHitSound, %position);
-            return %dam;
-        }
     }
-	}
 }

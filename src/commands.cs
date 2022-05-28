@@ -94,6 +94,11 @@ function serverCmdCustomName(%this, %firstname, %lastname)
 	messageClient(%this, '', '\c5You spent \c35 points\c5 and set your new name to %1.', %this.character.name);
 }
 
+	//function serverCmdReroll(%this)
+	//{
+	//	createPlayer(%this);
+	//}
+
 function serverCmdStats(%this, %target)
 {
 	if(%target $= "" || !%this.isAdmin)
@@ -212,34 +217,50 @@ function serverCmdForceVote(%client)
 	}
 }
 
-function serverCmdSpectate(%this)
+function serverCmdSpectate(%this, %do)
+{
+	if ($despairTrial !$= "" || $despairInvestigation !$= "")
+	{
+		messageClient(%this, '', '\c5You cannot spectate - the investigation/trial is in progress!');
+		return;
+	}
+	if (%do)
+	{
+		%this.spectating = !%this.spectating;
+		messageClient(%this, '', '\c5You are \c6%1\c5 spectating.', %this.spectating ? "now" : "no longer");
+		RS_Log(%this.getPlayerName() SPC "(" @ %this.getBLID() @ ") used /keepchar '" @ (!%this.noPersistance ? "yes" : "no") @ "'", "\c2");
+		if(isObject(%this.player) && %this.spectating)
+		{
+			%this.character.isDead = true;
+			%this.camera.setMode("Observer");
+			%this.setControlObject(%this.camera);
+			%this.camera.setControlObject(%this.camera);
+			%this.player.delete(); //Should be safe to do
+		}
+		
+		else if(%this.character.isDead = true)
+		{
+			continue;
+		}
+		
+		continue;
+	}
+	%msg = "Spectating now may have you sit out the rest of the match. Are you sure you want to spectate?";
+	commandToClient(%this, 'messageBoxYesNo', "Spectate", %msg, 'SpectateConfirmation');
+}
+
+function serverCmdSpectateConfirmation(%this)
+{
+    serverCmdSpectate(%this, true);
+}
+
+function serverCmdOptOut(%this)
 {
 	if (%this.killerHelper)
 	{
 		%this.killerHelper = false;
 		messageClient(%this, '', '\c5You are no longer eligible for helping the killer. Dead chat enabled.');
 		return;
-	}
-	if ($despairTrial !$= "")
-	{
-		messageClient(%this, '', '\c5You cannot spectate - trial is in progress!');
-		return;
-	}
-	%this.spectating = !%this.spectating;
-	messageClient(%this, '', '\c5You are \c6%1\c5 spectating.', %this.spectating ? "now" : "no longer");
-	RS_Log(%this.getPlayerName() SPC "(" @ %this.getBLID() @ ") used /keepchar '" @ (!%this.noPersistance ? "yes" : "no") @ "'", "\c2");
-	if(isObject(%this.player) && %this.spectating)
-	{
-		%this.character.isDead = true;
-		%this.camera.setMode("Observer");
-		%this.setControlObject(%this.camera);
-		%this.camera.setControlObject(%this.camera);
-		%this.player.delete(); //Should be safe to do
-	}
-	else
-	{
-		if(!$pickedKiller && !$DefaultMiniGame.permaDeath)
-			createPlayer(%this);
 	}
 }
 
@@ -260,6 +281,26 @@ function serverCmdWhoIs(%client, %a, %b)
 		{
 			messageClient(%client, '', '\c3%1 \c6is\c3 %2\c6, room \c3%3', %character.clientName, %character.name, $roomNum[%character.room]);
 		}
+	}
+}
+
+function serverCmdForgive(%this, %target)
+{
+	if(!%this.isAdmin){
+		return;
+	}
+	%target = findclientbyname(%target);
+	if(!isObject(%target))
+	{
+		messageClient(%this, '', '\c5Invalid target!');
+		return;
+	}
+	RS_Log(%this.getPlayerName() SPC "(" @ %this.getBLID() @ ") used /forgive '" @ %target.getPlayerName() SPC "(" @ %target.getBLID() @ ")'", "\c2");
+	messageClient(%this, '', '\c5You have forgiven %1.', %target.getPlayerName());
+	messageClient(%target, '', '\c5You were forgiven, and all RDM penalties have been removed.');
+	if(isObject(%target.player))
+	{
+		%target.player.noWeapons = false;
 	}
 }
 
@@ -527,8 +568,7 @@ function serverCmdResetAccept(%this)
 function ServerCmdPlaySong(%this, %profile)
 {
 	if (!%this.isAdmin) return;
-	serverPLaySong(%profile);
-	messageAll('', '\c6%1\c2 has played song \c3%2\c2.', %this.getPlayerName(), %proifle);
+	serverPlaySong(%profile);
 }
 
 package DespairAdmins

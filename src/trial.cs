@@ -201,7 +201,7 @@ function despairOnKill(%victim, %attacker, %crit)
 			$lastVictim = %victim.character;
 
 			%victim.killerHelper = true; //they gon help da killa
-			%msg = "<color:FF0000>You just got murdered! You will now be able to speak exclusively with the killer. Use /spectate to interact with other dead people instead.";
+			%msg = "<color:FF0000>You just got murdered! You will now be able to speak exclusively with the killer. Use /optout to interact with other dead people instead.";
 			messageClient(%victim, '', "<font:impact:30>" @ %msg);
 
 			if(%victim.killer && !%attacker.killer)

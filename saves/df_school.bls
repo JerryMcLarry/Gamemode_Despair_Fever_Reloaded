@@ -65,7 +65,7 @@ This is a Blockland save file.  You probably shouldn't modify it cause you'll sc
 0.419608 0.258824 0.149020 1.000000
 0.247059 0.137255 0.066667 1.000000
 1.000000 0.000000 1.000000 0.000000
-Linecount 36710
+Linecount 36713
 4x24F" 185 17.5 0.1 1 1 48  0 0 1 1 1
 1x2F" -2.5 36.75 0.1 1 1 47  0 0 1 1 1
 4x16" 21 -51 0.3 0 1 48  0 0 1 1 1
@@ -99,9 +99,7 @@ Linecount 36710
 1x16F" -1.5 2.75 0.1 1 1 47  0 0 1 1 1
 4x16" -4 15 0.3 0 1 48  0 0 1 1 1
 4x32F" 182.5 25.5 0.1 1 1 39  0 0 1 1 1
-1x1" 109.75 -54.75 0.9 1 1 44  0 0 1 1 1
-+-NTOBJECTNAME _gayshit
-+-ITEM Wrench" 0 2 4000
+6x12F" 0.5 -39 0.1 1 1 39  0 0 1 1 1
 2x2x5" -2.5 37.5 1.5 0 1 48  0 0 1 1 1
 4x32F" 182.5 27.5 0.1 1 1 39  0 0 1 1 1
 8x Cube Steep" -4 39 4 3 1 47 Letters/-space 0 0 1 1 0
@@ -644,9 +642,10 @@ Linecount 36710
 3x32F" 159.25 -31.5 0.1 0 1 39  0 0 1 1 1
 1x32H" -20 -24.75 0.2 1 1 0  0 0 1 1 1
 1x2F" 164 -31.25 0.1 1 1 47  0 0 1 1 1
-6x12F" 0.5 -39 0.1 1 1 39  0 0 1 1 1
 6x32F" -17.5 -27 0.1 1 1 39  0 0 1 1 1
-4x4F Tile" 109 -54 0.5 1 0 45  0 0 1 1 1
+1x1F" 117.25 -58.25 0.3 0 0 28  0 0 1 0 0
++-ITEM Handhammer" 0 2 4000
+48x48 Base" 187 6.5 10.1 0 0 47  0 0 1 1 1
 2x32x2" -2.5 46 4.8 0 0 47  0 0 1 1 1
 1x4F Tile" -33.25 3.5 0.3 3 0 45  0 0 1 1 1
 1x4F Tile" 187 5.75 0.3 2 0 57  0 0 1 1 1
@@ -2486,7 +2485,7 @@ House Door Frameless" 164.75 14 2.2 0 0 56  0 0 1 1 1
 1x1F Tile" -33.25 22.75 0.3 2 0 59  0 0 1 1 1
 1x4F Tile" -33.25 21.5 0.3 3 0 59  0 0 1 1 1
 1x4F Tile" 185.25 4.5 0.3 3 0 48  0 0 1 1 1
-48x48 Base" 187 6.5 10.1 0 0 47  0 0 1 1 1
+1x16x2" -37 -0.75 3.2 1 0 24  0 0 1 1 1
 2x2F" 186 11 10.3 0 0 0  3 0 1 1 1
 +-NTOBJECTNAME _schoollight
 +-LIGHT White Amb. Dim" 1
@@ -3016,7 +3015,7 @@ Plain Door Frameless" -15 -9.25 2.2 1 0 17  0 0 1 1 1
 1x1F" -38.75 8.25 0.5 0 0 17  0 0 1 0 0
 +-NTOBJECTNAME _r14_spawn
 2x3" -37.75 10.5 0.7 1 0 57  0 0 1 1 1
-1x16x2" -37 -0.75 3.2 1 0 24  0 0 1 1 1
+8x16" 195 -3.5 9.7 1 0 48  0 0 1 1 1
 1x16x2" -42.25 -8 3.2 0 0 58  0 0 1 1 1
 1x2F" -13.5 -2.25 0.5 1 0 45  0 0 1 1 1
 1x1x2" -12.25 -2.25 4 0 0 0  0 0 1 1 1
@@ -3558,7 +3557,7 @@ Plain Door Frameless" -44 2.75 2.2 3 0 17  0 0 1 1 1
 1x8" 188 18.25 9.7 1 0 48  0 0 1 1 1
 16x Cube Steep" 191.5 16 18.2 0 0 0 Letters/A 0 0 1 1 0
 16x Cube Steep" 183.5 16 18.2 0 0 0 Letters/A 0 0 1 1 0
-8x16" 195 -3.5 9.7 1 0 48  0 0 1 1 1
+5x6 Glass Pane" 198.75 13 8.1 2 0 47  0 0 1 1 1
 1x2x2" 223.25 -92.5 5.4 0 0 48  0 0 1 1 1
 1x2x2" 203 -93.75 5.4 1 0 47  0 0 1 1 1
 1x1" 194.75 -28.75 3.7 0 0 29  0 0 1 1 1
@@ -4177,7 +4176,7 @@ Plain Door Frameless" -44 2.75 2.2 3 0 17  0 0 1 1 1
 0.75x2F" -18 0.75 1.1 2 0 57  0 0 1 1 1
 45° Ramp 1x" -13.5 14.75 1.1 3 0 57  0 0 1 1 1
 12x24" 188 0.5 4.7 0 0 48  0 0 1 1 1
-5x6 Glass Pane" 198.75 13 8.1 2 0 47  0 0 1 1 1
+1x4x2" 185 18.25 8.2 1 0 48  0 0 1 1 1
 1x5H" 176.75 -29.75 6.2 1 0 48  0 0 1 1 1
 1x4H" -42.25 9.5 4.2 0 0 57  0 0 1 1 1
 1x1x2" 180.75 -29.75 5.4 0 0 48  0 0 1 1 1
@@ -4758,8 +4757,8 @@ Plain Door Frameless" -44 2.75 2.2 3 0 17  0 0 1 1 1
 2x4x3" 182 19 10.5 1 0 48  0 0 1 1 1
 1x3x2" 191.25 18.25 8.2 1 0 48  0 0 1 1 1
 1x4F" 184.5 18.75 11.5 1 0 48  0 0 1 1 1
-1x4x2" 185 18.25 8.2 1 0 48  0 0 1 1 1
 1x4x3" 184.5 18.75 10.5 1 0 48  0 0 1 1 1
+16x Cube Steep" 167.5 21 18 1 0 0 Letters/A 0 0 1 1 0
 1x1F Round" -0.75 -37.25 0.9 1 0 39  0 0 0 0 1
 2x2F" -1 -36.5 0.9 0 0 42  0 0 0 0 1
 2x2F Tile" 198 -25.5 1.3 0 0 45  0 0 1 1 1
@@ -5474,6 +5473,7 @@ Plain Door Frameless" 194.75 -3.5 7.2 0 0 48  0 0 1 1 1
 +-EVENT	3	1	onActivate	0	Self		fireRelayDown				
 +-EVENT	4	1	onActivate	0	Self		playSound	TrashOpenSound			
 1x1F Round" 119.25 -58.75 0.9 0 0 39  0 0 0 0 1
++-ITEM NONE" 0 5 4000
 8x16" 169 -19.5 4.7 1 0 48  0 0 1 1 1
 8x16" 169 -27.5 4.7 1 0 48  0 0 1 1 1
 1x1 Small Ramp" -13.25 2.75 1.6 0 0 45  0 0 1 1 1
@@ -5763,7 +5763,7 @@ Plain Door Frameless" 178.75 4.5 7.2 0 0 50  0 0 1 1 1
 Plain Door Frameless" 185.25 4.5 7.2 2 0 50  0 0 1 1 1
 +-NTOBJECTNAME _r7_door
 +-EVENT	0	1	onActivate	0	Self		door	0			
-16x Cube Steep" 167.5 21 18 1 0 0 Letters/A 0 0 1 1 0
+45° Ramp 4x" -27.5 -23 12.1 2 0 39  0 0 1 1 1
 1x4F Tile" -24.5 -1.25 5.3 2 0 56  0 0 1 1 1
 1x4F Tile" 189 5.75 5.3 2 0 36  0 0 1 1 1
 1x4F" -19.5 -24.25 3.1 1 0 0  0 0 1 1 1
@@ -6698,7 +6698,7 @@ Plain Door Frameless" 185.25 4.5 7.2 2 0 50  0 0 1 1 1
 1x1H" -25.75 -23.75 9.2 0 0 59  0 0 1 1 1
 0.75x2F" -25.75 -16 9.3 3 0 59  0 0 1 1 1
 0.75x2F" -25.75 -22 9.3 3 0 59  0 0 1 1 1
-45° Ramp 4x" -27.5 -23 12.1 2 0 39  0 0 1 1 1
+1x1F Vertical Corner Print" -39.25 12.25 3.1 2 0 48 Letters/-space 0 0 1 1 1
 45° Ramp 4x" -25.5 -23 12.1 2 0 39  0 0 1 1 1
 45° Ramp 4x" -25 -23.5 11.5 2 0 39  0 0 1 1 1
 1x1F Tile" -25.75 -11.75 5.3 3 0 56  0 0 1 1 1
@@ -7076,7 +7076,8 @@ Plain Door Frameless" 185.25 4.5 7.2 2 0 50  0 0 1 1 1
 1x1F Tile" 194.25 -6.25 5.3 3 0 51  0 0 1 1 1
 6x32F" 183.5 10.5 5.1 0 0 48  0 0 1 1 1
 1x2x2" 223.25 -92.5 7.2 0 0 48  0 0 1 1 1
-1x1F Vertical Corner Print" -39.25 12.25 3.1 2 0 48 Letters/-space 0 0 1 1 1
+1x1F Vertical Edge Print" 186.25 -12.25 5.9 1 0 58 Letters/-space 0 0 1 1 1
++-NTOBJECTNAME _bed
 1x10x4" 168 6.75 6.4 1 0 48  0 0 1 1 1
 1x4F Tile" 169 7.25 5.3 0 0 39  0 0 1 1 1
 2x2F Vertical Double Print" 165.75 -3 8.7 3 0 45 Letters/-space 1 0 1 1 1
@@ -7885,8 +7886,8 @@ Plain Door Frameless" 167.5 3.25 7.2 3 0 17  0 0 1 1 1
 3x3F Tile" -31.75 -19.25 5.3 2 0 57  0 0 1 1 1
 3x3F Tile" -31.75 -17.75 5.3 2 0 57  0 0 1 1 1
 1x4F Tile" -25.75 -18.5 5.3 1 0 57  0 0 1 1 1
-1x1F Vertical Edge Print" 186.25 -12.25 5.9 1 0 58 Letters/-space 0 0 1 1 1
-+-NTOBJECTNAME _bed
+Plain Door Frameless" 169.25 -3.5 7.2 0 0 48  0 0 1 1 1
++-EVENT	0	1	onActivate	0	Self		door	0			
 1x1F Vertical Edge Print" 188.75 -12.25 5.9 2 0 58 Letters/-space 0 0 1 1 1
 +-NTOBJECTNAME _bed
 1x1F" 191.25 -13.25 5.5 0 0 17  0 0 1 0 0
@@ -8671,7 +8672,7 @@ Wood Plank Door" -26.25 1.5 7.2 2 0 50  0 0 1 1 1
 1x4F Tile" -16.25 -3 5.3 1 0 48  0 0 1 1 1
 4x4F Tile" -18.5 -2.5 5.3 0 0 56  0 0 1 1 1
 1x4F Tile" -18.5 -1.25 5.3 2 0 56  0 0 1 1 1
-Plain Door Frameless" 169.25 -3.5 7.2 0 0 48  0 0 1 1 1
+Wood Plank Door" -20.25 19.5 7.2 0 0 56  0 0 1 1 1
 +-EVENT	0	1	onActivate	0	Self		door	0			
 1F 1x1F Vertical Print" -36.75 1.25 6.5 0 0 57 Letters/-space 0 0 1 1 1
 1x8" -15 11.25 9.1 1 0 58  0 0 1 1 1
@@ -9285,7 +9286,7 @@ Plain Door Frameless" -16.75 9.5 7.2 2 0 59  0 0 1 1 1
 3x3F Tile" 179.75 -5.75 5.3 0 0 48  0 0 1 1 1
 3x3F Tile" 179.75 -4.25 5.3 0 0 48  0 0 1 1 1
 3x3F Tile" 179.75 -7.25 5.3 0 0 48  0 0 1 1 1
-Wood Plank Door" -20.25 19.5 7.2 0 0 56  0 0 1 1 1
+Plain Door Frameless" 172.75 -25.5 7.2 2 0 56  0 0 1 1 1
 +-EVENT	0	1	onActivate	0	Self		door	0			
 2x2F Vertical Double Print" 179.25 -7 4.5 3 0 39 Letters/4 0 0 1 1 1
 45° Crest End" 241 -57.25 10.5 3 0 48  0 0 1 1 1
@@ -9684,8 +9685,7 @@ Plain Door Frameless" -42.25 9.5 7.2 2 0 24  0 0 1 1 1
 1x2H" 165 -23.75 7.2 1 0 48  0 0 1 1 1
 45° Crest End" 222 -57.25 10.5 3 0 48  0 0 1 1 1
 1x 1x2F Vertical Print" 167.25 -18.25 2.7 0 0 48 Letters/-space 0 0 1 1 1
-Plain Door Frameless" 172.75 -25.5 7.2 2 0 56  0 0 1 1 1
-+-EVENT	0	1	onActivate	0	Self		door	0			
+1x2F Tile" -33.5 -2.75 6.7 2 0 25  0 0 1 1 1
 2x2F Vertical Double Print" 194.25 5 7.1 1 0 48 Letters/-space 0 0 1 1 1
 1F 2x2F Vertical Print" 165.75 -2 7.1 3 0 31 Letters/-space 0 0 1 1 1
 1F 2x2F Vertical Print" 165.75 -3 7.1 3 0 31 Letters/-space 0 0 1 1 1
@@ -9985,7 +9985,7 @@ Glassiest Door Frameless" -34.25 21.5 7.2 2 0 57  0 0 1 1 1
 1F 2x2F Vertical Print" 198.25 -14 2.1 1 0 7 Letters/-space 0 0 1 1 1
 2x4F" 173 8 6.1 1 0 48  0 0 1 1 1
 2x2F Vertical Print" -33.5 -1.75 7.1 0 0 57 Letters/-space 0 0 1 1 1
-1x2F Tile" -33.5 -2.75 6.7 2 0 25  0 0 1 1 1
+1F 2x2F Vertical Print" 198.25 -3 2.1 1 0 31 Letters/-space 0 0 1 1 1
 2x4F" 175 8 6.1 1 0 48  0 0 1 1 1
 1x2" -13.5 -4.75 5.9 1 0 45  0 0 1 1 1
 1F 1x1F Vertical Corner Print" -14.25 -6.25 6.1 0 0 45 Letters/-space 0 0 1 1 1
@@ -10265,7 +10265,7 @@ Plain Door Frameless" -42.75 21 7.2 0 0 17  0 0 1 1 1
 1F 2x2F Vertical Print" 198.25 -2 2.1 1 0 31 Letters/-space 0 0 1 1 1
 1x4H" 168 -8.75 9.2 1 0 45  0 0 1 1 1
 0.75x1F" -15.25 -21.75 5.7 1 0 59  0 0 1 1 1
-1F 2x2F Vertical Print" 198.25 -3 2.1 1 0 31 Letters/-space 0 0 1 1 1
+1x8x4" -34.75 17 6.4 0 0 57  0 0 1 1 1
 1x1 Vertical TOP Ramp" 167.25 5.75 6.7 0 0 48  0 0 1 1 1
 5x6 Glass Pane" 176.5 -29.25 7.9 3 0 47  0 0 1 1 1
 1x1x4" -20.75 18.25 6.4 0 0 29  0 0 1 1 1
@@ -10436,7 +10436,7 @@ Glassiest Door Frameless" 186.75 -27.5 7.2 0 0 48  0 0 1 1 1
 1x2 Vertical TOP Ramp" -42.75 24.25 7.7 2 0 0  0 0 1 1 1
 1x2x2" -14.5 -16.75 6.8 1 0 19  0 0 1 1 1
 +-EVENT	0	1	onActivate	0	Self		fakeKillBrick	-15 0 5	15		
-1x8x4" -34.75 17 6.4 0 0 57  0 0 1 1 1
+1x1F Vertical Corner Print" 194.25 5.75 8.1 1 0 48 Letters/-space 0 0 1 1 1
 1x10x4" -38.5 23.25 6.4 1 0 57  0 0 1 1 1
 1x2x2" -14.5 -16.25 6.8 1 0 38  0 0 1 1 1
 +-EVENT	0	1	onActivate	0	Self		fakeKillBrick	-15 0 5	15		
@@ -10627,7 +10627,7 @@ Glassiest Door Frameless" 186.75 -27.5 7.2 0 0 48  0 0 1 1 1
 2x2F Vertical Double Print" 194.25 4 8.1 1 0 48 Letters/-space 0 0 1 1 1
 2x2F Vertical Double Print" 194.25 5 8.1 1 0 48 Letters/-space 0 0 1 1 1
 2x2F Vertical Double Print" 193.5 5.75 8.1 0 0 48 Letters/-space 0 0 1 1 1
-1x1F Vertical Corner Print" 194.25 5.75 8.1 1 0 48 Letters/-space 0 0 1 1 1
+0.75x2F" -25.75 -23 8.3 3 0 59  0 0 1 1 1
 1x10x3" -12.75 19.5 8.9 0 0 54  0 0 1 1 1
 2x2F Vertical Double Print" 165.75 -14 8.7 3 0 45 Letters/-space 1 0 1 1 1
 +-EVENT	0	1	onActivate	0	Self		setCameraDir	1			
@@ -10759,7 +10759,7 @@ Glassiest Door Frameless" 186.75 -27.5 7.2 0 0 48  0 0 1 1 1
 1x2x4" 186.75 -25.5 6.4 0 0 39  0 0 1 1 1
 0.75x1F" -15.25 -21.75 6.1 1 0 59  0 0 1 1 1
 0.5x1F" -20.75 -17.25 8.3 2 0 59  0 0 1 1 1
-0.75x2F" -25.75 -23 8.3 3 0 59  0 0 1 1 1
+2x4H" 199 -5 11.8 1 0 48  0 0 1 1 1
 0.75x2F" -25.75 -14 8.3 3 0 59  0 0 1 1 1
 1x10" 198.75 -20 9.1 0 0 50  0 0 1 1 1
 3x6F" -17.75 -9 8.7 0 0 48  0 0 1 1 1
@@ -10869,7 +10869,7 @@ House Door Frameless" 187.25 -19.5 7.2 0 0 48  0 0 1 1 1
 +-EVENT	0	1	onActivate	0	Self		setCameraDir	0			
 0.25x0.25 Edge" 174.25 -4.75 7.3 3 0 58  0 0 1 1 1
 +-EVENT	0	1	onRelay	0	Self		fireRelayUp				
-2x4H" 199 -5 11.8 1 0 48  0 0 1 1 1
+1x10x2" 196 -25.25 8.2 1 0 39  0 0 1 1 1
 0.25x0.25 Edge" 194.25 -1.25 7.3 3 0 58  0 0 1 1 1
 +-EVENT	0	1	onRelay	0	Self		fireRelayUp				
 1F 1x1F Vertical Corner Print" 198.25 -2.75 6.3 2 0 45 Letters/-space 0 0 1 1 1
@@ -10988,7 +10988,11 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 1x10x2" 196 -29.25 8.2 1 0 39  0 0 1 1 1
 2x2F Vertical Double Print" 165.75 -15 7.7 3 0 45 Letters/-space 1 0 1 1 1
 +-EVENT	0	1	onActivate	0	Self		setCameraDir	1			
-1x10x2" 196 -25.25 8.2 1 0 39  0 0 1 1 1
+2x2F Glass Pane" -45.5 8.5 6.3 0 0 17  0 0 1 1 1
++-EVENT	0	1	onActivate	0	Player		setBloody	0	0	0	
++-EVENT	1	1	onActivate	0	Self		playSound	exitWaterSound			
++-EVENT	2	1	onActivate	200	Self		playSound	exitWaterSound			
++-EVENT	3	1	onActivate	400	Self		playSound	exitWaterSound			
 1x8x2" 198.75 -25.5 8.2 0 0 39  0 0 1 1 1
 1x8x4" 187.25 -23 6.4 0 0 39  0 0 1 1 1
 1x1" -44.25 0.25 6.7 0 0 48  0 0 1 1 1
@@ -11024,7 +11028,7 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 1F 1x1F Vertical Corner Print" 198.25 -14.75 6.3 2 0 45 Letters/-space 0 0 1 1 1
 1x10x4" 191 -17.75 6.4 1 0 39  0 0 1 1 1
 1F 1x1F Vertical Corner Print" 166.25 -14.75 6.3 2 0 45 Letters/-space 0 0 1 1 1
-2x2F Vertical Double Print" -11.75 -17 5.7 3 0 56 Letters/L 0 0 1 0 1
+2x2F Vertical Double Print" -11.75 -17 5.7 3 0 56 Letters/S 0 0 1 0 1
 0.75x1F" -15.25 -15.25 6.3 1 0 59  0 0 1 1 1
 2x2F Vertical Double Print" -45.5 14.25 6.1 2 0 57 Letters/-space 0 0 1 1 1
 2x2F Vertical Double Print" -46.25 15 6.1 3 0 57 Letters/-space 0 0 1 1 1
@@ -11105,13 +11109,10 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 +-EVENT	8	1	onMiniGameReset	0	Self		setEventEnabled	3 4 5	1		
 +-EVENT	9	1	onMiniGameReset	0	Self		setLight	-1			
 +-EVENT	10	1	onMiniGameReset	0	Self		setColorFX	0			
-2x2F Vertical Double Print" -11.75 -21 5.7 3 0 56 Letters/-space 0 0 1 0 1
+2x2F Vertical Double Print" -11.75 -21 5.7 3 0 56 Letters/H 0 0 1 0 1
 1x1F Vertical Corner Print" -46.25 14.25 6.1 3 0 57 Letters/-space 0 0 1 1 1
-2x2F Glass Pane" -45.5 8.5 6.3 0 0 17  0 0 1 1 1
-+-EVENT	0	1	onActivate	0	Player		setBloody	0	0	0	
-+-EVENT	1	1	onActivate	0	Self		playSound	exitWaterSound			
-+-EVENT	2	1	onActivate	200	Self		playSound	exitWaterSound			
-+-EVENT	3	1	onActivate	400	Self		playSound	exitWaterSound			
+1x2x2" -14.5 -19.25 8.4 1 0 29  0 0 1 1 1
++-EVENT	0	1	onActivate	0	Self		fakeKillBrick	-15 0 5	15		
 0.5x0.5F Corner" 184.25 -16.25 7.1 0 0 41  0 0 1 0 1
 3x6F" -45.75 15.5 5.5 0 0 57  0 0 1 1 1
 0.5x0.5F Corner" 183.75 -16.25 7.1 1 0 41  0 0 1 0 1
@@ -11171,8 +11172,7 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 45° Ramp 1x" 195.25 -28.5 6.1 0 0 45  0 0 1 1 1
 1x1 Small Ramp" 195.25 -28.75 6.6 1 0 45  0 0 1 1 1
 1x4x4" 198.75 -28.5 6.4 0 0 39  0 0 1 1 1
-1x2x2" -14.5 -19.25 8.4 1 0 29  0 0 1 1 1
-+-EVENT	0	1	onActivate	0	Self		fakeKillBrick	-15 0 5	15		
+0.25x0.25F" 166.75 17.25 6.9 0 0 42  0 0 1 0 1
 1x6x4" 188.5 -25.25 6.4 1 0 39  0 0 1 1 1
 1x2x2" -14.5 -20.75 8.4 1 0 32  0 0 1 1 1
 +-EVENT	0	1	onActivate	0	Self		fakeKillBrick	-15 0 5	15		
@@ -11218,7 +11218,7 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 1x1x4" 190.25 -25.25 6.4 0 0 39  0 0 1 1 1
 0.75x2F" -25.75 -23 7.9 3 0 59  0 0 1 1 1
 0.25x0.25F" 166.75 16.75 6.9 1 0 42  0 0 1 0 1
-0.25x0.25F" 166.75 17.25 6.9 0 0 42  0 0 1 0 1
+0.25x0.25F" 166.75 17.25 7.1 0 0 42  0 0 1 0 1
 4x12F" -14 -19 9.1 0 0 59  0 0 1 1 1
 1x1 Small Ramp" 198.25 -27.25 7.2 0 0 48  0 0 1 1 1
 0.5x1F" -20.75 -17.25 7.7 2 0 59  0 0 1 1 1
@@ -11235,7 +11235,8 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 1x2H" 195.25 -28.5 5.6 0 0 45  0 0 1 1 1
 1x1F Vertical Corner Print" 198.75 -22.75 7.1 2 0 48 Letters/-space 0 0 1 1 1
 0.75x2F" -25.75 -23 6.7 3 0 59  0 0 1 1 1
-0.25x0.25F" 166.75 17.25 7.1 0 0 42  0 0 1 0 1
+1x1F" -45.75 15.75 5.7 0 0 0  0 0 1 0 0
++-NTOBJECTNAME _r22_closet
 1x1" 167.25 -6.25 6.7 0 0 48  0 0 1 1 1
 4x4F Tile" -44.5 17.5 5.3 2 0 58  0 0 1 1 1
 1x4F Tile" -45.75 17.5 5.3 3 0 57  0 0 1 1 1
@@ -11258,8 +11259,7 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 4x4F Tile" -44.5 15.5 5.3 1 0 58  0 0 1 1 1
 2x2F Vertical Double Print" 198 -22.75 7.1 2 0 48 Letters/-space 0 0 1 1 1
 2x2F Vertical Double Print" 198.75 -22 7.1 1 0 48 Letters/-space 0 0 1 1 1
-1x1F" -45.75 15.75 5.7 0 0 0  0 0 1 0 0
-+-NTOBJECTNAME _r22_closet
+0.5x0.5F" 184.25 -15.75 7.5 2 0 41  0 0 1 0 1
 0.5x0.5F" 185.75 -24.25 7.5 0 0 41  0 0 1 0 1
 0.5x0.5F" 183.75 -15.75 7.5 1 0 41  0 0 1 0 1
 0.5x1F" -20.75 -17.25 6.9 2 0 59  0 0 1 1 1
@@ -11271,7 +11271,7 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 0.75x1F" -15.25 -15.25 6.9 1 0 59  0 0 1 1 1
 2x2F Vertical Double Print" 198.75 -21 6.1 1 0 48 Letters/-space 0 0 1 1 1
 0.75x1F" -15.25 -21.75 6.9 1 0 59  0 0 1 1 1
-0.5x0.5F" 184.25 -15.75 7.5 2 0 41  0 0 1 0 1
+0.5x0.5F" 183.75 -16.25 7.5 0 0 41  0 0 1 0 1
 2x2F Vertical Double Print" 198 -22.75 6.1 2 0 48 Letters/-space 0 0 1 1 1
 0.75x2F" -25.75 -14 7.5 3 0 59  0 0 1 1 1
 0.75x2F" -25.75 -14 6.9 3 0 59  0 0 1 1 1
@@ -11282,7 +11282,7 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 1x1F Vertical Corner Print" 198.75 -20.25 6.1 1 0 48 Letters/-space 0 0 1 1 1
 1x1F Vertical Corner Print" 198.75 -22.75 6.1 2 0 48 Letters/-space 0 0 1 1 1
 0.75x2F" -25.75 -23 7.5 3 0 59  0 0 1 1 1
-0.5x0.5F" 183.75 -16.25 7.5 0 0 41  0 0 1 0 1
+0.75x1F" -15.25 -15.25 7.1 1 0 59  0 0 1 1 1
 0.75x2F" -25.75 -23 7.3 3 0 59  0 0 1 1 1
 0.75x2F" -25.75 -23 7.1 3 0 59  0 0 1 1 1
 0.25x0.25F" 183.75 -16.25 7.7 0 0 56  0 0 1 0 1
@@ -11292,14 +11292,14 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 0.25x0.25F" 184.25 -16.25 7.7 3 0 56  0 0 1 0 1
 0.75x1F" -15.25 -21.75 7.1 1 0 59  0 0 1 1 1
 0.25x0.25F" 185.75 -23.75 7.7 1 0 56  0 0 1 0 1
-0.75x1F" -15.25 -15.25 7.1 1 0 59  0 0 1 1 1
+3x6F" 198.25 -21.5 5.5 0 0 48  0 0 1 1 1
 0.25x0.25F" 183.75 -15.75 7.7 1 0 56  0 0 1 0 1
 0.25x0.25F" 186.25 -23.75 7.7 2 0 56  0 0 1 0 1
 0.5x1F" -20.75 -17.25 7.1 2 0 59  0 0 1 1 1
 0.5x1F" -20.75 -17.25 7.3 2 0 59  0 0 1 1 1
 0.25x0.25F" 186.25 -24.25 7.7 3 0 56  0 0 1 0 1
 0.25x0.25F" 185.75 -24.25 7.7 0 0 56  0 0 1 0 1
-3x6F" 198.25 -21.5 5.5 0 0 48  0 0 1 1 1
+4x4F Tile" 197 -19.5 5.3 3 0 45  0 0 1 1 1
 1x4F Tile" 198.25 -23.5 5.3 1 0 50  0 0 1 1 1
 4x4F Tile" 197 -21.5 5.3 3 0 50  0 0 1 1 1
 4x4F Tile" 197 -23.5 5.3 0 0 45  0 0 1 1 1
@@ -11312,30 +11312,30 @@ Plain Door Frameless" 195.25 -27 7.2 2 0 17  0 0 1 1 1
 0.25x0.25F" 186.25 -23.75 7.9 2 0 41  0 0 1 0 1
 0.25x0.25F" 185.75 -24.25 7.9 0 0 41  0 0 1 0 1
 0.25x0.25F" 183.75 -16.25 7.9 0 0 41  0 0 1 0 1
-4x4F Tile" 197 -19.5 5.3 3 0 45  0 0 1 1 1
+0.25x0.25F" 184.25 -16.25 7.9 3 0 41  0 0 1 0 1
 1x4F Tile" 198.25 -19.5 5.3 3 0 50  0 0 1 1 1
 1x4F Tile" 198.25 -21.5 5.3 3 0 50  0 0 1 1 1
 0.25x0.25F" 184.25 -15.75 7.9 2 0 41  0 0 1 0 1
 0.25x0.25F" 186.25 -24.25 7.9 3 0 41  0 0 1 0 1
-0.25x0.25F" 184.25 -16.25 7.9 3 0 41  0 0 1 0 1
 0.75x1F" -15.25 -15.25 7.5 1 0 30  2 0 1 1 1
 0.75x1F" -15.25 -21.75 7.5 1 0 30  2 0 1 1 1
 0.75x1F" -15.25 -21.75 7.7 1 0 59  0 0 1 1 1
 0.75x1F" -15.25 -15.25 7.7 1 0 59  0 0 1 1 1
-0.75x1F" -15.25 -21.75 7.9 1 0 59  0 0 1 1 1
 0.75x1F" -15.25 -15.25 7.9 1 0 59  0 0 1 1 1
-0.75x1F" -15.25 -15.25 8.1 1 0 59  0 0 1 1 1
+0.75x1F" -15.25 -21.75 7.9 1 0 59  0 0 1 1 1
 0.75x1F" -15.25 -21.75 8.1 1 0 59  0 0 1 1 1
-0.75x1F" -15.25 -21.75 8.3 1 0 59  0 0 1 1 1
+0.75x1F" -15.25 -15.25 8.1 1 0 59  0 0 1 1 1
 0.75x1F" -15.25 -15.25 8.3 1 0 59  0 0 1 1 1
-0.75x1F" -15.25 -15.25 8.5 1 0 59  0 0 1 1 1
+0.75x1F" -15.25 -21.75 8.3 1 0 59  0 0 1 1 1
 0.75x1F" -15.25 -21.75 8.5 1 0 59  0 0 1 1 1
-0.75x1F" -15.25 -15.25 8.7 1 0 59  0 0 1 1 1
+0.75x1F" -15.25 -15.25 8.5 1 0 59  0 0 1 1 1
 0.75x1F" -15.25 -21.75 8.7 1 0 59  0 0 1 1 1
-0.75x1F" -15.25 -21.75 8.9 1 0 59  0 0 1 1 1
+0.75x1F" -15.25 -15.25 8.7 1 0 59  0 0 1 1 1
 0.75x1F" -15.25 -15.25 8.9 1 0 59  0 0 1 1 1
-0.75x1F" -15.25 -15.25 9.1 1 0 59  0 0 1 1 1
+0.75x1F" -15.25 -21.75 8.9 1 0 59  0 0 1 1 1
 0.75x1F" -15.25 -21.75 9.1 1 0 59  0 0 1 1 1
+0.75x1F" -15.25 -15.25 9.1 1 0 59  0 0 1 1 1
+4x4F Tile" 109 -54 0.5 1 0 45  0 0 1 1 1
 2x16x5" 27.5 -10 12.9 1 0 48  0 0 1 1 1
 2x4x2" 6.5 -31 5.4 0 0 29  0 0 1 1 1
 2x4x2" 6.5 -29 5.4 0 0 29  0 0 1 1 1
@@ -21462,7 +21462,10 @@ Large Window Door" 54.75 72 2.4 0 0 47  0 0 1 1 1
 1x4F Tile" -35.25 15.5 5.3 1 0 57  0 0 1 1 1
 0.25x2F" 67.25 -27 6.1 3 0 49  0 0 1 1 1
 +-EVENT	0	1	onActivate	0	Player		SetVelocity	0 0 10			
-2x2" 57 72 2.3 0 0 58  0 0 1 1 1
+1x1" 109.75 -54.75 0.9 1 0 44  0 0 1 1 1
++-NTOBJECTNAME _gayshit
++-EVENT	0	1	onPlayerTouch	0	Player		setBloody	0	0	1	
++-ITEM Wrench" 0 2 4000
 1F 1x1F Vertical Corner Print" 59.75 71.25 5.5 2 0 48 Letters/-space 0 0 1 1 1
 2x2x2" 58 71 3.4 0 0 58  0 0 1 1 1
 2x2" 57.5 71 4.3 0 0 58  0 0 1 1 1
@@ -24141,7 +24144,7 @@ Large Window Door" 85.25 58 2.4 2 0 47  0 0 1 1 1
 4x4F Tile" 79 14 0.5 2 0 39  0 0 1 1 1
 1x1F" 72.75 12.25 2.1 0 0 57  0 0 1 1 1
 +-NTOBJECTNAME _hatSpawn
-+-ITEM Hat Wizard" 0 2 1000
++-ITEM Hat Wizard" 0 3 1000
 1x1 Round" 72.75 12.25 1.7 1 0 57  0 0 1 1 1
 1x1 Round" 72.75 12.25 1.1 1 0 57  0 0 1 1 1
 1x 1x1F Vertical Edge Print" 72.75 15.25 0.9 2 0 58 Letters/-space 0 0 1 1 1
@@ -40862,6 +40865,7 @@ Large Window Door" 54.75 22 2.4 0 0 47  0 0 1 1 1
 4x4F Tile" 11 74 0.5 2 0 48  0 0 1 1 1
 4x4F Tile" 9 74 0.5 2 0 48  0 0 1 1 1
 1x1x2" 8.25 74.75 1.2 0 0 48  0 0 1 1 1
++-ITEM Handhammer" 3 2 4000
 2x4F Tile" 83.5 3.5 1.9 3 0 57  0 0 1 1 1
 1x1F Vertical Edge Print" 82.75 2.75 1.1 2 0 58 Letters/-space 0 0 1 1 1
 1x2x2" 141.75 -45.5 2 0 0 48  0 0 1 1 1
@@ -42238,7 +42242,7 @@ Double Curtains Door" -15.25 -16.5 7.2 2 0 45  0 0 1 1 1
 +-NTOBJECTNAME _bed
 2x2F Vertical Double Print" -11.75 -16 5.7 3 0 56 Letters/-space 0 0 1 0 1
 2x2F Vertical Double Print" -11.75 -18 5.7 3 0 56 Letters/L 0 0 1 0 1
-2x2F Vertical Double Print" -11.75 -19 5.7 3 0 56 Letters/A 0 0 1 0 1
+2x2F Vertical Double Print" -11.75 -19 5.7 3 0 56 Letters/L 0 0 1 0 1
 2x2F Vertical Double Print" -11.75 -19 6.7 3 0 56 Letters/-space 0 0 1 0 1
 2x2F Vertical Double Print" -11.75 -18 6.7 3 0 56 Letters/X 0 0 1 0 1
 Locker Door" 192.75 -6.75 2.1 0 0 48  0 0 1 1 1
@@ -42276,7 +42280,7 @@ Locker Door" 192.75 -6.75 7.1 0 0 27  0 0 1 1 1
 2x2F Vertical Double Print" -11.75 -20 6.7 3 0 56 Letters/G 0 0 1 0 1
 2x2F Vertical Double Print" -11.75 -22 6.7 3 0 56 Letters/I 0 0 1 0 1
 2x2F Vertical Double Print" -11.75 -23 6.7 3 0 56 Letters/X 0 0 1 0 1
-2x2F Vertical Double Print" -11.75 -20 5.7 3 0 56 Letters/H 0 0 1 0 1
+2x2F Vertical Double Print" -11.75 -20 5.7 3 0 56 Letters/A 0 0 1 0 1
 2x2F Vertical Double Print" -11.75 -22 5.7 3 0 56 Letters/-space 0 0 1 0 1
 2x2F Vertical Double Print" -11.75 -23 5.7 3 0 58 Letters/-space 0 0 1 0 1
 1x 2x2F Vertical Print" -19.75 5.5 0.9 1 0 45 Letters/-space 0 0 1 1 1
@@ -43430,3 +43434,8 @@ Locker Door" -36.75 -10.25 7.1 1 0 48  0 0 1 1 1
 4x12F" 124 -34 2.9 1 0 59  0 0 1 1 1
 4x12F" 124 -34 1.3 1 0 59  0 0 1 1 1
 2x2x2" 57 70.5 2 0 0 58  0 0 1 1 1
+1x1F" 70.75 49.75 2.1 0 0 28  0 0 1 0 0
++-ITEM Handhammer" 0 3 4000
+1x1F" 57.25 6.25 0.9 0 0 0  0 0 1 0 0
++-ITEM Handhammer" 0 2 4000
+2x2" 57 72 2.3 0 0 58  0 0 1 1 1

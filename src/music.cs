@@ -214,7 +214,7 @@ datablock AudioProfile(DespairMusicInvestigationLoop3)
 	preload = true;
 };
 
-datablock AudioProfile(LastTwoStanding)
+datablock AudioProfile(DespairMusicLastTwoStanding)
 {
 	fileName = $Despair::Path @ "res/music/lasttwostanding.ogg";
 	description = AudioLooping2D;
@@ -230,16 +230,16 @@ datablock AudioProfile(DespairMusicIntense)
 
 datablock AudioProfile(DespairMusicWonderfulIntro)
 {
-	fileName = $Despair::Path @ "res/music/wonderfulStoryIntro.ogg";
+	fileName = $Despair::Path @ "res/music/wonderfulStoryintro.ogg";
 	description = audio2D;
 	preload = true;
-	loopStart = 5245;
+	loopStart = 24067;
 	loopProfile = DespairMusicWonderfulLoop;
 };
 
 datablock AudioProfile(DespairMusicWonderfulLoop)
 {
-	fileName = $Despair::Path @ "res/music/wonderfulStoryLoop.ogg";
+	fileName = $Despair::Path @ "res/music/wonderfulStoryloop.ogg";
 	description = AudioLooping2D;
 	preload = true;
 };
@@ -263,6 +263,27 @@ datablock AudioProfile(DespairMusicWorldendDominator)
 	description = AudioLooping2D;
 	preload = true;
 };
+
+//datablock AudioProfile(DespairMusicManhunt1)
+//{
+//	fileName = $Despair::Path @ "res/music/manhunt1.ogg";
+//	description = AudioLooping2D;
+//	preload = true;
+//};
+
+//datablock AudioProfile(DespairMusicManhunt2)
+//{
+	//fileName = $Despair::Path @ "res/music/manhunt2.ogg";
+	//description = AudioLooping2D;
+	//preload = true;
+//};
+
+//datablock AudioProfile(DespairMusicManhunt3)
+//{
+	//fileName = $Despair::Path @ "res/music/manhunt3.ogg";
+	//description = AudioLooping2D;
+	//preload = true;
+//};
 
 function ServerStopSong()
 {

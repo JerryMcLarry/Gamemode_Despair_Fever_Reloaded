@@ -92,8 +92,8 @@ function Player::setStatusEffect(%player, %slot, %effect, %nomsg)
 		case "lethargic":
 			if(%slot != $SE_passiveSlot)
 				return %slot;
-			%player.updateSpeedScale(0.5);
-			%player.swingSpeedMod = 2;
+			%player.updateSpeedScale(0.85);
+			%player.swingSpeedMod = 1.25;
 			%player.addMood(-3, "A wave of lethargy washes over you...", 1);
 			cancel(%player.statusSchedule[%slot]);
 			%player.statusSchedule[%slot] = %player.schedule(45000, removeStatusEffect, %slot, %effect);

@@ -757,6 +757,42 @@ package DespairFever
 			despairPrepareGame();
 	}
 
+//	function manhuntTime()
+//	{
+ //       %center = %obj.getEyePoint();
+  //      initContainerRadiusSearch(%center, 48, $TypeMasks::PlayerObjectType);
+   //     while (isObject(%found = containerSearchNext()))
+    //    {
+     //       if(%found == %obj || %found.getState() $= "Dead")
+      //          continue;
+       //     %point = %found.getEyePoint();
+        //    %ray = containerRayCast(%center, %point, $TypeMasks::FxBrickObjectType, %obj);
+         //   
+          //  if(!isObject(%ray) && %obj.isWithinView(%point))
+           // {
+			//	messageAll('', 'fucking hell you');
+             //   ServerPlayMusic(pickField(Manhunt1));
+            //}
+        //}
+		//
+		//for (%i = 0; %i < $DefaultMiniGame.numMembers; %i++)
+		//{
+			//%member = $DefaultMiniGame.member[%i];
+
+			//if (%member.player && %member.player != %this)
+			//{
+			//	%dist = vectorDist(%this.getEyePoint(), %member.player.getEyePoint());
+			//	if (%dist <= 64)
+			//	{
+			//		messageAll('', 'fucking hell pk');
+			//		ServerPlayMusic(pickField(Manhunt2));
+			//	}
+			//}
+		//}
+			//messageAll('', 'you a gay ass motherfucker goddamnit');
+			//ServerPlayMusic(pickField(Manhunt3)); 
+					
+	//}
 	function MiniGameSO::checkLastManStanding($DefaultMiniGame)
 	{
 		if ($DefaultMiniGame.owner)
@@ -794,18 +830,18 @@ package DespairFever
 
 		if(!%otherAlive)
 		{
-			talk("Everybody is dead dave");
+			talk("Nothing stirs within the area. No one wins.");
 			$defaultMiniGame.winRounds = 0; //Reset the winrounds counter for permadeath
 			despairEndGame();
 		}
 		else if(!%killerAlive && $pickedKiller)
 		{
-			talk("Killer is dead, rip");
+			talk("The Killer's reign is over. Innocents win.");
 			despairEndGame();
 		}
 		else if($aliveCount == 1)
 		{
-			talk("I AM THE ONE AND ONLY");
+			talk("A lone person climbs out of the premises, covered in blood. Killer victory.");
 			$defaultMiniGame.winRounds = 0; //Reset the winrounds counter for permadeath
 			despairEndGame();
 		}
@@ -817,8 +853,14 @@ package DespairFever
 				$FinalBoss = true;
 				cancel($DefaultMiniGame.eventSchedule);
 				$DefaultMiniGame.eventSchedule = schedule(300*1000, $pickedKiller.player, "kill");
-				ServerPlaySong(pickField("DespairMusicIntense" TAB "DespairMusicWonderfulIntro" TAB "LastTwoStanding"));
 				DespairSetWeapons(1);
+				if(getRandom() > 0.35) {
+					manhuntTime();
+				}
+				else
+				{
+					ServerPlaySong(pickField("DespairMusicIntense" TAB "DespairMusicWonderfulIntro" TAB "LastTwoStanding"));
+				}
 			}
 		}
 		else
