@@ -289,6 +289,11 @@ function serverCmdForgive(%this, %target)
 	if(!%this.isAdmin){
 		return;
 	}
+		if ($despairTrial !$= "" || $despairInvestigation !$= "")
+		{
+			messageClient(%this, '', '\c5You cannot forgive someone - the investigation/trial is in progress!');
+			return;
+		}
 	%target = findclientbyname(%target);
 	if(!isObject(%target))
 	{

@@ -427,3 +427,26 @@ function stutterText(%text, %prob)
 	}
 	return %result;
 }
+
+function adjustDrunkMessage(%msg, %drunkLevel)
+{
+	%drunkLevel /= 100; //amt drunk
+
+	for (%i = 0; %i < strLen(%msg); %i++)
+	{
+		%letter = getSubStr(%msg, %i, 1);
+		if (getRandom() < (%drunkLevel - 0.1) / 5)
+			%ret = %ret @ %letter @ %letter; //double letter
+		else if (getRandom() < (%drunkLevel - 0.2) / 5)
+			%ret = %ret; //skip letter
+		else if (getRandom() < (%drunkLevel - 0.3) / 5)
+			%ret = %ret @ getRandomLetter();
+		else
+			%ret = %ret @ %letter;
+	}
+}
+
+function getRandomLetter()
+{
+	return getSubStr("abcdefghijklmnopqrstuvwxyz", getRandom(0, 25), 1);
+}

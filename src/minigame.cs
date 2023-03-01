@@ -757,42 +757,28 @@ package DespairFever
 			despairPrepareGame();
 	}
 
-//	function manhuntTime()
-//	{
- //       %center = %obj.getEyePoint();
-  //      initContainerRadiusSearch(%center, 48, $TypeMasks::PlayerObjectType);
-   //     while (isObject(%found = containerSearchNext()))
-    //    {
-     //       if(%found == %obj || %found.getState() $= "Dead")
-      //          continue;
-       //     %point = %found.getEyePoint();
-        //    %ray = containerRayCast(%center, %point, $TypeMasks::FxBrickObjectType, %obj);
-         //   
-          //  if(!isObject(%ray) && %obj.isWithinView(%point))
-           // {
-			//	messageAll('', 'fucking hell you');
-             //   ServerPlayMusic(pickField(Manhunt1));
-            //}
-        //}
-		//
-		//for (%i = 0; %i < $DefaultMiniGame.numMembers; %i++)
-		//{
-			//%member = $DefaultMiniGame.member[%i];
-
-			//if (%member.player && %member.player != %this)
-			//{
-			//	%dist = vectorDist(%this.getEyePoint(), %member.player.getEyePoint());
-			//	if (%dist <= 64)
-			//	{
-			//		messageAll('', 'fucking hell pk');
-			//		ServerPlayMusic(pickField(Manhunt2));
-			//	}
-			//}
-		//}
-			//messageAll('', 'you a gay ass motherfucker goddamnit');
-			//ServerPlayMusic(pickField(Manhunt3)); 
-					
-	//}
+///	function manhuntTime()
+///	{
+			
+ ///       %center = %killer.getEyePoint();
+ ///       initContainerRadiusSearch(%center, 48, $TypeMasks::PlayerObjectType);
+ ///       if(isObject(%found = containerSearchNext()))
+ ///       {
+ ///           if(%found == %obj || %found.getState() $= "Dead"){
+  ///              continue;
+///			}
+  ///          %point = %found.getEyePoint();
+  ///          %ray = containerRayCast(%center, %point, $TypeMasks::FxBrickObjectType, %obj);
+            
+  ///          if(!isObject(%ray) && %obj.isWithinView(%point))
+  ///          {
+///				messageAll('', 'stage2');
+  ///             ServerPlayMusic(pickField(DespairMusicWonderfulLoop2));
+  ///          }
+  ///      }
+///			messageAll('', 'stage1');
+	///		ServerPlayMusic(pickField(DespairMusicWonderfulIntro)); 
+	}
 	function MiniGameSO::checkLastManStanding($DefaultMiniGame)
 	{
 		if ($DefaultMiniGame.owner)
@@ -859,7 +845,7 @@ package DespairFever
 				}
 				else
 				{
-					ServerPlaySong(pickField("DespairMusicIntense" TAB "DespairMusicWonderfulIntro" TAB "LastTwoStanding"));
+					ServerPlaySong(pickField("DespairMusicIntense" TAB "DespairMusicWonderfulIntro" TAB "DespairMusicLastTwoStanding"));
 				}
 			}
 		}

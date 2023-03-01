@@ -85,12 +85,14 @@ function serverCmdWrite(%client, %a1, %a2, %a3, %a4, %a5, %a6, %a7, %a8, %a9, %a
 			%text = scrambleText(%text, %prob);
 		}
 	}
-	else if(%player.bloodyWriting > 0)
+	
+	else if(%player.bloodyWriting > 0 && %player.bloody["rhand"] = true)
 	{
 		%blood = true;
 		%text = scrambleText(%text, 0.2);
 		%player.bloodyWriting--;
 	}
+
 
 	if (%player.tool[%player.currTool] == nameToID(PaperItem))
 	{

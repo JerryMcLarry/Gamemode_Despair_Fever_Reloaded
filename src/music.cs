@@ -244,6 +244,13 @@ datablock AudioProfile(DespairMusicWonderfulLoop)
 	preload = true;
 };
 
+datablock AudioProfile(DespairMusicWonderfulLoop2)
+{
+	fileName = $Despair::Path @ "res/music/wonderfulStoryloop2.ogg";
+	description = AudioLooping2D;
+	preload = true;
+};
+
 datablock AudioProfile(DespairMusicKillerWin)
 {
 	fileName = $Despair::Path @ "res/music/killerWinsShort.ogg";
@@ -264,26 +271,51 @@ datablock AudioProfile(DespairMusicWorldendDominator)
 	preload = true;
 };
 
-//datablock AudioProfile(DespairMusicManhunt1)
-//{
-//	fileName = $Despair::Path @ "res/music/manhunt1.ogg";
-//	description = AudioLooping2D;
-//	preload = true;
-//};
+datablock AudioProfile(DespairMusicManhunt1)
+{
+	fileName = $Despair::Path @ "res/music/manhunt1.ogg";
+	description = AudioLooping2D;
+	preload = true;
+};
 
-//datablock AudioProfile(DespairMusicManhunt2)
-//{
-	//fileName = $Despair::Path @ "res/music/manhunt2.ogg";
-	//description = AudioLooping2D;
-	//preload = true;
-//};
+datablock AudioProfile(DespairMusicManhunt2)
+{
+	fileName = $Despair::Path @ "res/music/manhunt2.ogg";
+	description = AudioLooping2D;
+	preload = true;
+};
 
-//datablock AudioProfile(DespairMusicManhunt3)
-//{
-	//fileName = $Despair::Path @ "res/music/manhunt3.ogg";
-	//description = AudioLooping2D;
-	//preload = true;
-//};
+datablock AudioProfile(DespairMusicHopefulTurnaboutIntro)
+{
+	fileName = $Despair::Path @ "res/music/hopefulTurnaboutIntro.ogg";
+	description = AudioLooping2D;
+	preload = true;
+	loopStart = 15149;
+	loopProfile = DespairMusicHopefulTurnaboutLoop;
+};
+
+datablock AudioProfile(DespairMusicHopefulTurnaboutLoop)
+{
+	fileName = $Despair::Path @ "res/music/hopefulTurnaboutLoop.ogg";
+	description = AudioLooping2D;
+	preload = true;
+};
+
+datablock AudioProfile(DespairMusicHopefulTurnaboutIntro2)
+{
+	fileName = $Despair::Path @ "res/music/hopefulTurnaboutIntro2.ogg";
+	description = AudioLooping2D;
+	preload = true;
+	loopStart = 28990;
+	loopProfile = DespairMusicHopefulTurnaboutLoop2;
+};
+
+datablock AudioProfile(DespairMusicHopefulTurnaboutLoop2)
+{
+	fileName = $Despair::Path @ "res/music/hopefulTurnaboutLoop2.ogg";
+	description = AudioLooping2D;
+	preload = true;
+};
 
 function ServerStopSong()
 {
